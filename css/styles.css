@@ -17,6 +17,7 @@ main {
 img {
     margin: 10px;
     border: 1px solid #000;
+    float: right;
 }
 
 header, footer {
