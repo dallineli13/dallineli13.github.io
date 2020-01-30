@@ -1,0 +1,30 @@
+@media only screen and (min-width: 35rem) {
+
+    nav ul.hide { 
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+    }
+
+    nav ul { 
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+    }
+
+    nav ul {margin-left: 2%;}
+
+    nav button {display: none;}
+
+    nav ul li a {
+        border: none;
+        padding: .8rem 1rem;
+    }
+
+    main, footer {
+        margin: 1.25rem auto;
+        max-width: 1200px;
+    }
+}

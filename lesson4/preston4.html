@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="description" content="A site that helps you check the weather!">
+    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+    <link rel="stylesheet" href="css/small.css">
+    <link rel="stylesheet" href="css/medium.css">
+    <link rel="stylesheet" href="css/large.css">
+    <title>Your Live Weather</title>
+</head>
+<body>
+    <header>
+        <img src="images/weather.png" alt="weather-icon">
+        <section id="headings">
+            <h1>Your Live Weather</h1>
+            <h5>The weather at your fingertips!</h5>
+        </section>
+    </header>
+    <nav id="clearfix">
+        <button onclick="toggleMenu()">&#9776;</button>
+        <ul id="navBar">
+            <li><a href="preston4.html">Home</a></li>
+            <li class="active"><a href="preston4.html">Preston</a></li>
+            <li><a href="preston4.html">Soda Springs</a></li>
+            <li><a href="preston4.html">Fish Haven</a></li>
+            <li><a href="preston4.html">Storm Center</a></li>
+            <li><a href="preston4.html">Gallery</a></li>
+        </ul>
+    </nav>
+    <main>
+        <section>
+            <h1>Preston, Idaho</h1>
+        </section>
+        
+        <div class="placeholder">Weather Update</div>
+        <div class="placeholder">Forecast</div>
+        <div class="placeholder">Articles</div>
+        <div class="placeholder">Contact</div>
+        
+    </main>
+    <footer>
+            <div>&copy; 2020 | Your Live Weather | Dallin Eliason</div>
+            <span id="today"></span>
+    </footer>
+    <script src="js/scripts.js"></script>
+</body>
+</html>

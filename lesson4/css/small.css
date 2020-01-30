@@ -1,0 +1,97 @@
+/* Prevent adjustments of font size after orientation changes in IE on Windows Phone and in iOS.  */
+html {-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%;}
+
+/*----------- apply a natural box layout model to all elements --------------*/
+* { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
+
+
+header {
+    background-color: #4D9DE0;
+    padding: 1.2rem 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+header img {
+    width: 70px;
+    height: auto;
+}
+
+#headings {
+    display: flex;
+    flex-direction: column;
+}
+
+#headings h1, motto {
+    font-family: 'Roboto', sans-serif;
+    margin: 0 0 0 17px;
+    color: #fff
+}
+
+nav {
+    font-family: 'Roboto', sans-serif;
+    background-color: #CACF85;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li a {
+    display: block;
+    padding: .8rem 2%;
+    text-decoration: none;
+    color: #000;
+    border-top: 1px solid rgba(0,0,0,0.3);
+}
+
+nav button {
+    margin: .2rem 2%;
+    background-color: transparent;
+    border: none;
+    font-size: 1.6rem;
+    color: #555;
+}
+
+nav ul.hide {display: none;}
+
+nav ul li a:hover {background-color: rgba(0,0,0,0.2);}
+
+nav ul li.active a {background-color: rgba(0,0,0,0.2); color: #fff;}
+
+section h1 {
+    text-align: center;
+    color: #D64550;
+}
+
+
+.placeholder {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2% 0;
+    margin: 10px;
+    border: 1px dashed dimgray;
+    background-color: aliceblue;
+}
+
+footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.2rem;
+    background-color: #4D9DE0;
+    color: #fff;
+    padding: 20px;
+}
+
+#clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
