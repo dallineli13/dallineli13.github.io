@@ -23,7 +23,7 @@ header img {
     flex-direction: column;
 }
 
-#headings h1, motto {
+#headings h1, h4 {
     font-family: 'Roboto', sans-serif;
     margin: 0 0 0 17px;
     color: #fff
