@@ -135,8 +135,7 @@ main {
 
 .article img {
     display: block;
-    margin-left: 2%;
-    margin-bottom: 2%;
+    margin: 2%;
     box-shadow: 1px 1px 2px 3px #000;
 }
 
