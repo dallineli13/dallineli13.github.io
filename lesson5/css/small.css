@@ -4,14 +4,25 @@ html {-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%;}
 /*----------- apply a natural box layout model to all elements --------------*/
 * { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
 
-
+body {
+    background-color: #465362;
+    font-family: 'Roboto', sans-serif;
+}
 
 header {
-    background-color: #4D9DE0;
+    background-color: #011936;
     padding: 1.2rem 0;
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+aside {
+    width: 100%;
+    height: auto;
+    background-color: #F7CE5B;
+    text-align: center;
+    padding: 2%;
 }
 
 header img {
@@ -27,12 +38,12 @@ header img {
 #headings h1, h4 {
     font-family: 'Roboto', sans-serif;
     margin: 0 0 0 17px;
-    color: #fff
+    color: #fff;
 }
 
 nav {
     font-family: 'Roboto', sans-serif;
-    background-color: #A6AA6D;
+    background-color: #82A3A1;
 }
 
 nav ul {
@@ -45,7 +56,7 @@ nav ul li a {
     display: block;
     padding: .8rem 2%;
     text-decoration: none;
-    color: #000;
+    color: #011936;
     border-top: 1px solid rgba(0,0,0,0.3);
 }
 
@@ -66,18 +77,85 @@ nav ul li.active a {background-color: rgba(0,0,0,0.2); color: #fff;}
 
 section h1 {
     text-align: center;
-    color: #D64550;
+    color: #fff;
 }
 
-.placeholder {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 2% 0;
-    margin: 10px;
-    border: 1px dashed dimgray;
-    background-color: aliceblue;
+main {
+    max-width: 900px;
+    margin: 0 auto;
+    color: #fff;
 }
+
+.hero {
+    margin: 10px auto;
+    position: relative;
+}
+
+.hero img {
+    display: block;
+    width: 90%;
+    margin: 0 auto;
+}
+
+#summary {
+    position: absolute;
+    top: 30px;
+    left: 40px;
+    width: 250px;
+    border-radius: 2%;
+    background-color: #9FC490;
+    background: rgba(159, 196, 144, 0.8);
+    color: #011936;
+    padding: 1.2rem;
+}
+
+#summary h2, p {
+    margin: 0;
+    padding: 2% 1%;
+    word-wrap: inherit;
+}
+
+#summary h2 {
+    color: white;
+    font-weight: 700;
+
+}
+
+#forecast {
+    display: none;
+}
+
+.article {
+    width: 90%;
+    height: auto;
+    margin: 90px auto;
+    background: rgba(159, 196, 144, 0.7);
+    padding: 1.2rem;
+}
+
+.article img {
+    display: block;
+    margin-left: 2%;
+    margin-bottom: 2%;
+    box-shadow: 1px 1px 2px 3px #000;
+}
+
+.article p {
+    color: #011936;
+}
+
+#map {
+    width: 60%;
+    margin: 0 auto;
+    margin-top: 50px;
+    padding: 5%;
+    background: rgba(130, 163, 161, 0.7);
+}
+
+#map img {
+    display: none;
+}
+
 
 footer {
     display: flex;
@@ -86,9 +164,10 @@ footer {
     flex-direction: column;
     font-family: 'Roboto', sans-serif;
     font-size: 1.2rem;
-    background-color: #4D9DE0;
+    background-color: #011936;
     color: #fff;
     padding: 20px;
+    margin: 0;
 }
 
 #clearfix:after {
