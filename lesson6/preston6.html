@@ -42,11 +42,11 @@
         </section>
 
         <div class="hero">
-            <img src="images/preston.jpeg" alt="town banner" sizes="50vw"
-            srcset="images/preston-small.jpg 300w,
-            images/preston-medium.jpg 500w,
-            images/preston-large.jpg 800w"
-            >
+            <picture>
+                <source media="(max-width: 700px)" srcset="images/preston-small.jpg">
+                <source media="(max-width: 1100px)" srcset="images/preston-medium.jpg">
+                <img src="images/preston-large.jpg" alt='banner-photo'>
+            </picture>
             <div id='summary'>
                 <h2>Weather Summary</h2>
                 <p>Currently: <span id="currently">Sunny</span></p>
