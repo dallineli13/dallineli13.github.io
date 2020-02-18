@@ -1,0 +1,21 @@
+body {
+    margin: 1.25rem auto;
+    max-width: 900px;
+}
+
+
+section .image-wrapper {
+    display: grid;
+    grid-template-rows: repeat(5, 320px);
+    gap: 20px;
+}
+
+section .image-wrapper img[data-src] {
+    filter: blur(0.2em);
+}
+
+section .image-wrapper img {
+    width: 400px;
+    height: 300px;
+    transition: filter 2s;
+}
