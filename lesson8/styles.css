@@ -1,0 +1,38 @@
+table {
+    width: 20%;
+    box-shadow: 10px 8px 12px #628ca6;
+}
+
+table, th, td {
+    border: 1px rgb(152, 152, 152) solid;
+    border-collapse: collapse;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+th, td {
+    padding: 10px;
+    text-align: center;
+}
+
+thead th {
+    background-color: #7fb9c2;
+    font-size: 24px;
+}
+
+tbody th {
+    background-color: #628ca6;
+    color: white;
+}
+
+tbody tr {
+    background-color: #e7f0ed;
+}
+
+tbody tr:nth-child(odd) {
+    background-color: #e7ffed;
+}
+
+tfoot {
+    background-color: #7fb9c2;
+}
+
