@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="description" content="A site that helps you check the weather!">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+    <link rel="stylesheet" href="css/small.css">
+    <link rel="stylesheet" href="css/medium.css">
+    <link rel="stylesheet" href="css/large.css">
+    <link rel="shortcut icon" href="favicon.ico">
+    <title>Your Live Weather</title>
+</head>
+
+<body>
+    <aside id="banner" style="display: block"><span>Saturday = Preston Pancakes in the Park! 9:00 a.m. Saturday at the
+            city park pavilion.</span></aside>
+    <header>
+        <img src="images/weather.png" alt="weather-icon">
+        <section id="headings">
+            <h1>Your Live Weather</h1>
+            <h4>The weather at your fingertips!</h4>
+        </section>
+    </header>
+    <nav id="clearfix">
+        <button onclick="toggleMenu()">&#9776; Menu</button>
+        <ul id="navBar" class="hide">
+            <li><a href="preston4.html">Home</a></li>
+            <li class="active"><a href="preston4.html">Preston</a></li>
+            <li><a href="preston4.html">Soda Springs</a></li>
+            <li><a href="preston4.html">Fish Haven</a></li>
+            <li><a href="preston4.html">Storm Center</a></li>
+            <li><a href="preston4.html">Gallery</a></li>
+        </ul>
+    </nav>
+    <main>
+        <section>
+            <h1>Storm Center</h1>
+        </section>
+
+        <section>
+            <form>
+                <fieldset>
+                    <legend>Contact Info</legend>
+                    <label class="top">Full Name <input type="text" name="name" required></label>
+                    <label class="top">Email <input type="email" name="email" placeholder="example@email.com"></label>
+                    <label class="top">Phone <input type="tel" name="phone" required></label>
+                    <label class="top">Zip Code <input type="number" name="zip" required></label>
+                </fieldset>
+                <fieldset>
+                    <legend>Storm Info</legend>
+                    <label class="top">Storm Date <input type="date" name="date"></label>
+                    <label class="top">Storm Type
+                        <input list="storms">
+                        <datalist id="storms">
+                            <option value="Flash Flood">
+                            <option value="Hail">
+                            <option value="Hurricane">
+                            <option value="Thunderstorm">
+                            <option value="Tornado">
+                        </datalist>
+                    </label>
+                    <label class="range-label">Storm Severity
+                        <input type="range" name="severity" min="1" max="10" value="5" oninput="adjustRange(this.value)"
+                            onchange="adjustRange(this.value)"><span id="range">5</span>
+                    </label>
+                    <label class="top">Storm Region
+                        <select class="select-css">
+                            <option id="select" value="">Select Region</option>
+                            <option value="preston">Preston</option>
+                            <option value="soda">Soda Springs</option>
+                            <option value="fish">Fish Haven</option>
+                        </select>
+                    </label>
+                    <div>User In-Danger Level</div>
+                    <label class="sbs"><input type="radio" name="danger" value="yes"> Yes</label>
+                    <label class="sbs"><input type="radio" name="danger" value="maybe"> Maybe</label>
+                    <label class="sbs"><input type="radio" name="danger" value="no"> No</label>
+                    <label style="display: flex; flex-direction: column;" class="top">Additional Comments  
+                        <textarea style="margin-top: 20px;"></textarea>
+                    </label>
+                </fieldset>
+                <input class="submitBtn" type="submit" value="Report Storm">
+            </form>
+        </section>
+    </main>
+    <footer>
+        <div>&copy; Your Live Weather | Dallin Eliason</div>
+        <span id="today"></span>
+    </footer>
+    <script src="js/scripts.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+    <script>
+        WebFont.load({
+            google: {
+                families: [
+                    'Roboto'
+                ]
+            }
+        });
+    </script>
+</body>
+
+</html>
