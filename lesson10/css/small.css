@@ -1,0 +1,176 @@
+/* Prevent adjustments of font size after orientation changes in IE on Windows Phone and in iOS.  */
+html {-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%;}
+
+/*----------- apply a natural box layout model to all elements --------------*/
+* { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
+
+body {
+    background-color: #465362;
+    font-family: 'Roboto', sans-serif;
+}
+
+header {
+    background-color: #011936;
+    padding: 1.2rem 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+aside {
+    width: 100%;
+    height: auto;
+    background-color: #F7CE5B;
+    text-align: center;
+    padding: 2%;
+}
+
+header img {
+    width: 70px;
+    height: auto;
+}
+
+#headings {
+    display: flex;
+    flex-direction: column;
+}
+
+#headings h1, h4 {
+    font-family: 'Roboto', sans-serif;
+    margin: 0 0 0 17px;
+    color: #fff;
+}
+
+nav {
+    font-family: 'Roboto', sans-serif;
+    background-color: #82A3A1;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li a {
+    display: block;
+    padding: .8rem 2%;
+    text-decoration: none;
+    color: #011936;
+    border-top: 1px solid rgba(0,0,0,0.3);
+}
+
+nav button {
+    margin: .2rem 2%;
+    background-color: transparent;
+    border: none;
+    font-size: 1.6rem;
+    color: #555;
+}
+
+
+nav ul.hide {display: none;}
+
+nav ul li a:hover {background-color: rgba(0,0,0,0.2);}
+
+nav ul li.active a {background-color: rgba(0,0,0,0.2); color: #fff;}
+
+section h1 {
+    text-align: center;
+    color: #fff;
+}
+
+main {
+    max-width: 900px;
+    margin: 0 auto;
+    color: #fff;
+}
+
+.hero {
+    margin: 10px auto;
+    position: relative;
+}
+
+.hero img {
+    display: block;
+    width: 90%;
+    margin: 0 auto;
+}
+
+#summary {
+    position: absolute;
+    top: 30px;
+    left: 40px;
+    width: 250px;
+    border-radius: 2%;
+    background-color: #9FC490;
+    background: rgba(159, 196, 144, 0.8);
+    color: #011936;
+    padding: 1.2rem;
+}
+
+#summary h2, p {
+    margin: 0;
+    padding: 2% 1%;
+    word-wrap: inherit;
+}
+
+#summary h2 {
+    color: white;
+    font-weight: 700;
+
+}
+
+#forecast {
+    display: none;
+}
+
+.article {
+    width: 90%;
+    height: auto;
+    margin: 90px auto;
+    background: rgba(159, 196, 144, 0.7);
+    padding: 1.2rem;
+}
+
+.article img {
+    display: block;
+    margin: 2%;
+    box-shadow: 1px 1px 2px 3px #000;
+}
+
+.article p {
+    color: #011936;
+}
+
+#map {
+    width: 80%;
+    margin: 0 auto;
+    margin-top: 50px;
+    padding: 5%;
+    background: rgba(130, 163, 161, 0.7);
+}
+
+#map img {
+    display: none;
+}
+
+
+footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.2rem;
+    background-color: #011936;
+    color: #fff;
+    padding: 20px;
+    margin: 0;
+}
+
+#clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
