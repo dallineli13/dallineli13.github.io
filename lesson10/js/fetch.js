@@ -27,7 +27,6 @@ fetch(forecastUrl)
     .then(response => response.json())
     .then(jsObject => {
         const forecasts = jsObject.list.filter(item => item.dt_txt.includes('18:00:00'))
-        console.log(forecasts)
         const rows = document.querySelectorAll('.row a span')
         const icons = document.querySelectorAll('.row img')
         const days = document.querySelectorAll('th')
