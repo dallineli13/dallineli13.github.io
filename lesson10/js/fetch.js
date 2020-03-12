@@ -36,6 +36,7 @@ fetch(forecastUrl)
             const day = weekdays[date.getDay()]
             rows[i].textContent = Math.round(forecasts[i].main.temp)
             icons[i].setAttribute('src', `https://openweathermap.org/img/wn/${forecasts[i].weather[0].icon}@2x.png`)
+            icons[i].setAttribute('alt', forecasts[i].weather[0].description)
             days[i].textContent = day
         }
     })
