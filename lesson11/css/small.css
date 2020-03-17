@@ -460,10 +460,6 @@ form input.submitBtn {
     margin-bottom: 250px;
 }
 
-section h1 {
-    color: black;
-}
-
 #gallery img {
     object-fit: cover;
     width: 100%;
