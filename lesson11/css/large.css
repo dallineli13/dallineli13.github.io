@@ -62,4 +62,12 @@
         justify-self: center;
     }
 
+    form input.submitBtn {
+        width: 30%;
+    }
+
+    form label.top input, form label.top select {
+        width: 60%;    
+    }
+
 } /*end large */
