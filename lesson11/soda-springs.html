@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="description" content="A site that helps you check the weather!">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+    <link rel="stylesheet" href="css/small.css">
+    <link rel="stylesheet" href="css/medium.css">
+    <link rel="stylesheet" href="css/large.css">
+    <link rel="shortcut icon" href="favicon.ico">
+    <title>Your Live Weather</title>
+</head>
+
+<body>
+    <aside id="banner" style="display: block"><span>Saturday = Preston Pancakes in the Park! 9:00 a.m. Saturday at the
+            city park pavilion.</span></aside>
+    <header>
+        <img src="images/weather.png" alt="weather-icon">
+        <section id="headings">
+            <h1>Your Live Weather</h1>
+            <h4>The weather at your fingertips!</h4>
+        </section>
+    </header>
+    <nav id="clearfix">
+        <button onclick="toggleMenu()">&#9776; Menu</button>
+        <ul id="navBar" class="hide">
+            <li><a href="/lesson11/index.html">Home</a></li>
+            <li><a href="/lesson11/preston.html">Preston</a></li>
+            <li class="active"><a href="/lesson11/soda-springs.html">Soda Springs</a></li>
+            <li><a href="/lesson11/fish-haven.html">Fish Haven</a></li>
+            <li><a href="/lesson11/stormcenter.html">Storm Center</a></li>
+            <li><a href="/lesson11/gallery.html">Gallery</a></li>
+        </ul>
+    </nav>
+    <main>
+        <section>
+            <h1>Soda Springs, Idaho</h1>
+        </section>
+
+        <div class="hero">
+            <img src="images/soda-large.jpg" alt="town banner">
+            <div style="background-color: rgba(159, 196, 144, 0.9);" id='summary'>
+                <h2>Weather Summary</h2>
+                <p style="font-size: 1.2rem;""><strong>Currently:</strong> <span id="currently" style="font-size: 1.2rem;"></span></p>
+                <p><strong>High:</strong> <span id="high"></span>&deg;F</p>
+                <p><strong>Wind Chill:</strong> <span id="wind-chill"></span>&deg;F</p>
+                <p><strong>Humidity:</strong> <span id="humidity"></span>%</p>
+                <p><strong>Wind Speed:</strong> <span id="wind-speed"></span> mph</p>
+            </div>
+        </div>
+        <section id="forecast" class="forecast-hide">
+            <h2>5 Day Forecast</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Wed</th>
+                        <th>Thu</th>
+                        <th>Fri</th>
+                        <th>Sat</th>
+                        <th>Sun</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>
+                            <div class="row">
+                                <img src="https://placeholder.com/400" alt="weather-icon">
+                                <a><span></span>&deg;</a>
+                            </div>
+                        </td>
+                        <td>
+                            <div class="row">
+                                <img src="https://placeholder.com/400" alt="weather-icon">
+                                <a><span></span>&deg;</a>
+                            </div>
+                        </td>
+                        <td>
+                            <div class="row">
+                                <img src="https://placeholder.com/400" alt="weather-icon">
+                                <a><span></span>&deg;</a>
+                            </div>
+                        </td>
+                        <td>
+                            <div class="row">
+                                <img src="https://placeholder.com/400" alt="weather-icon">
+                                <a><span></span>&deg;</a>
+                            </div>
+                        </td>
+                        <td>
+                            <div class="row">
+                                <img src="https://placeholder.com/400" alt="weather-icon">
+                                <a><span></span>&deg;</a>
+                            </div>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+        <article>
+            <div class="article clearfix">
+                <h2 style="margin-left: 10px;">Snowy Weather Ahead!</h2>
+                <h4>By: Necia P Seamons</h4>
+                <img src="images/snow-pic.jpg" alt="article image">
+                <p style="font-size: 1.2rem;">The Idaho Transportation Department (ITD) and the National Weather Service (NWS) are advising the
+                    traveling public to use caution while in transit due to an extended severe winter weather advisory
+                    beginning this evening Wed., Feb. 5.
+
+                Drivers can expect high winds, blowing and drifting snow, low visibilty and heavy snow in higher
+                    elevations. Up to five inches of snow in the valley and nine inches in the mountains is expected
+                    over the next 24 hours, in Franklin County, the eastern part of Oneida County and north throughout
+                    the Snake River Plain. 
+
+                ITD advises drivers to expect intermittent road closures as forecasted increases of wind speed and
+                    precipitation may require a halt in snow-clearing operations if conditions become too dangerous for
+                    plows to operate. 
+
+                "We are expecting some substantial winds and snowfall," says ITD District 6 Operations Manager Wade
+                    Allen. "Starting tomorrow, our crews will be working around the clock to keep roads open, but they
+                    expect to close roads as weather proceeds and it is deemed unsafe for them to plow."
+
+                ITD District 5 Operations Manager Greydon Wright also noted, "We urge all travelers to plan your
+                    drive ahead of time in case roads are icy or closed. Check 511 and please drive safe!"</p>
+            </div>
+        </article>
+        <section id="event-container">
+            <div class="event-items">
+                <h2>Upcoming Events</h2>
+                <div class="line"></div>
+                <div class="events"></div>
+            </div>
+        </section>
+        <section id="map">
+            <img src="images/map.jpg" alt="Google Maps image">
+            <div id="contact">
+                <strong>Your Live Weather</strong><br>
+                50 N 2nd W<br>
+                Preston, ID 83263<br>
+                <br>
+                <strong>Phone: </strong>123-456-7890<br>
+                <strong>Email: </strong>live@weather.com
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div>&copy; Your Live Weather | Dallin Eliason</div>
+        <span id="today"></span>
+        <span>Attribution: https://openweathermap.org</span>
+    </footer>
+    <script src="js/fetch.js"></script>
+    <script src="js/scripts.js"></script>
+    <script src="js/windchill.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+    <script>
+        WebFont.load({
+            google: {
+                families: [
+                    'Roboto'
+                ]
+            }
+        });
+    </script>
+</body>
+
+</html>

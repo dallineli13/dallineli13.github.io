@@ -1,0 +1,65 @@
+@media only screen and (min-width: 64rem) {
+
+    nav ul li a {
+        padding: .6rem 1rem;
+    }
+
+    #summary {
+        top: 60px;
+        left: 110px;
+    }
+
+    h4 {
+        font-style: italic;
+        text-align: center;
+        margin-bottom: 10px;
+    }
+
+    .container {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(330px, 1fr));
+        grid-gap: 20px;
+        justify-content: center;
+        align-items: unset;
+        max-width: unset;
+    }
+    
+    .container section {
+        width: auto;
+        background-color: #011936;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center
+    }
+
+    .container section h2 {
+        margin-bottom: 5px;
+    }
+
+    .container section:nth-child(2) div.txtImage {
+        flex-direction: column;
+        padding: 0;
+    }
+
+    .container section div.txtImage {
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    .container section div.image {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 0;
+    }
+    
+    .container section div.image img {
+        width: 90%;
+        height: 50%;
+        align-self: center;
+        justify-self: center;
+    }
+
+} /*end large */

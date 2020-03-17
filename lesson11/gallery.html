@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="description" content="A site that helps you check the weather!">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+    <link rel="stylesheet" href="css/small.css">
+    <link rel="stylesheet" href="css/medium.css">
+    <link rel="stylesheet" href="css/large.css">
+    <link rel="shortcut icon" href="favicon.ico">
+    <title>Your Live Weather</title>
+</head>
+
+<body>
+    <aside id="banner" style="display: block"><span>Saturday = Preston Pancakes in the Park! 9:00 a.m. Saturday at the
+            city park pavilion.</span></aside>
+    <header>
+        <img src="images/weather.png" alt="weather-icon">
+        <section id="headings">
+            <h1>Your Live Weather</h1>
+            <h4>The weather at your fingertips!</h4>
+        </section>
+    </header>
+    <nav id="clearfix">
+        <button onclick="toggleMenu()">&#9776; Menu</button>
+        <ul id="navBar" class="hide">
+            <li><a href="/lesson11/index.html">Home</a></li>
+            <li><a href="/lesson11/preston.html">Preston</a></li>
+            <li><a href="/lesson11/soda-springs.html">Soda Springs</a></li>
+            <li><a href="/lesson11/fish-haven.html">Fish Haven</a></li>
+            <li><a href="/lesson11/stormcenter.html">Storm Center</a></li>
+            <li class="active"><a href="/lesson11/gallery.html">Gallery</a></li>
+        </ul>
+    </nav>
+    <main>
+        <section>
+            <h1>Gallery</h1>
+            <div id='gallery'>
+                <div class='gallery-item'>
+                    <img src="https://via.placeholder.com/250x250" data-src="images/w1.jpg" alt='1'>
+                    <div class='container'>
+                        <p>Cloudy skies ahead in Preston with possible rain storms.</p>
+                    </div>
+                </div>
+                <div class='gallery-item'>
+                    <img src="https://via.placeholder.com/250x250" data-src="images/w2.jpg" alt='2'>
+                    <div class='container'>
+                        <p>Expect overcast skies down by the lake.</p>
+                    </div>  
+                </div>
+                <div class='gallery-item'>
+                    <img src="https://via.placeholder.com/250x250" data-src="images/w3.jpg" alt='3'>
+                    <div class='container'>
+                        <p>Partly cloudy day today with no chance of rain.</p>
+                    </div>
+                </div>
+                <div class='gallery-item'>
+                    <img src="https://via.placeholder.com/250x250" data-src="images/w4.jpg" alt='4'>
+                    <div class='container'>
+                        <p>Early rain showers in downtown Preston.</p>
+                    </div>
+                </div>
+                <div class='gallery-item'>
+                    <img src="https://via.placeholder.com/250x250" data-src="images/w5.jpg" alt='5'>
+                    <div class='container'>
+                        <p>Everyone get out and check out the sunset this evening!</p>
+                    </div>
+                </div>
+                <div class='gallery-item'>
+                    <img src="https://via.placeholder.com/250x250" data-src="images/w6.jpg" alt='6'>
+                    <div class='container'>
+                        <p>Great day to spend outside! Partly cloudy with no chance of rain showers.</p>
+                    </div>
+                </div>
+                <div class='gallery-item'>
+                    <img src="https://via.placeholder.com/250x250" data-src="images/w7.jpg" alt='7'>
+                    <div class='container'>
+                        <p>Rainy day today over in Fish Haven. Bring your umbrellas!</p>
+                    </div>
+                </div>
+                <div class='gallery-item'>
+                    <img src="https://via.placeholder.com/250x250" data-src="images/w8.jpg" alt='8'>
+                    <div class='container'>
+                        <p>Expect rain all day today in downtown Soda Springs.</p> 
+                    </div>
+                </div>
+                <div class='gallery-item'>
+                    <img src="https://via.placeholder.com/250x250" data-src="images/w9.jpg" alt='9'>
+                    <div class='container'>
+                        <p>Thunderstorms expected this afternoon in Preston.</p>
+                    </div>
+                </div>    
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div>&copy; Your Live Weather | Dallin Eliason</div>
+        <span id="today"></span>
+    </footer>
+    <script src="js/lazyload.js"></script>
+    <script src="js/scripts.js"></script>
+</body>
+</html>
