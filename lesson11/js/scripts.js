@@ -20,3 +20,7 @@ document.getElementById("today").textContent = `${dayName}, ${day} ${monthName} 
 if (dayName !== "Friday") {
     const el = document.getElementById("banner").style.display = "none";
 }
+
+function adjustRange(value) {
+    document.getElementById('range').innerHTML = value;
+}
