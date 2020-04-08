@@ -1,0 +1,363 @@
+html {
+    box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
+body {
+    font-family: 'Muli', sans-serif;
+    margin: 0;
+    background-image: linear-gradient(260deg, #2376ae 0%, #c16ecf 100%);
+}
+
+/* Nav */
+.flex-nav a, .flex-nav button {
+    color: white;
+    font-weight: 100;
+    letter-spacing: 2px;
+    text-decoration: none;
+    background: rgba(0, 0, 0, 0.2);
+    padding: 20px 5px;
+    display: inline-block;
+    width: 100%;
+    text-align: center;
+    transition: all 0.5s;
+}
+
+.flex-nav button {
+    border: 1px solid black;
+    border-bottom: none;
+}
+
+a:hover {
+    background: rgba(0, 0, 0, 0.3);
+}
+
+.wrapper {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 50px;
+}
+
+.flex-nav ul {
+    border: 1px solid black;
+    list-style: none;
+    margin-bottom: 20px;
+    padding: 0;
+    display: flex;
+    margin-top:0;
+}
+
+.flex-nav li {
+    flex: 3;
+}
+
+.flex-nav .social {
+    flex: 1;
+}
+
+.flex-nav button {display: none;}
+
+
+.banner img {
+    border: 1px solid black;
+    transition: 1s ease-in-out;
+}
+
+.dark {
+    filter: brightness(30%);
+}
+
+header section {
+    display: flex;
+    justify-content: center;
+  }
+
+section h1 {
+    text-align: center;
+    font-weight: 400;
+    font-size: 3rem;
+    color: #ffff;
+}
+
+.raft-logo {
+    height: 100px;
+    margin-right: 20px;
+}
+
+    /* Banner */
+
+  main {
+      max-width: 1200px;
+      margin: 0 auto;
+  }
+
+  .banner {
+    display: flex;
+    justify-content: center;
+  }
+
+  .banner img {
+      border:1px solid black;
+  }
+
+  .banner-txt-wrapper {
+    width: 55%;
+    font-size: 1.5rem;
+    position: absolute;
+    top: 500px;
+    color: #c16ecf;
+
+    display: flex;
+    flex-direction: column;
+  }
+
+  .banner-txt-wrapper button {
+    background-color: #c16ecf;
+    color: #fff;
+    font-size: 1.3rem;
+    border: 1px solid black;
+    width: 40%;
+    height: 50px;
+    margin-top: 30px;
+
+    align-self: center;
+  }
+
+  .banner-txt-wrapper button:hover {
+    cursor: pointer;
+  }
+
+  .hide {
+    display: none;
+  }
+
+  /* weather summary */
+
+  .weather {
+      height: 300px;
+      margin-top: 30px;
+
+      display: flex;
+      justify-content: space-around;
+  }
+
+  .weather h2 {
+    color: white;
+    letter-spacing: 2px;
+  }
+
+  .weather div {
+    color: white;
+    font-size: 1.3rem;
+    font-weight: 400;
+    letter-spacing: 2px;
+  }
+
+  .weather-conditions div {
+      padding: 8px;
+  }
+
+  .weather div span {
+      font-size: 1.4rem;
+  }
+
+  .img-main {
+      width: 500px;
+      margin-left: 100px;
+      border: 1px solid black;
+  }
+
+  .weather-container {
+      border: 1px solid black;
+      background: rgba(0, 0, 0, 0.2);
+      width: 500px;
+  }
+
+  .weather-wrapper {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+  }
+
+  .weather-icon-header {
+      display: flex;
+      align-items: center;
+  }
+
+  .weather-conditions {
+      display: flex;
+      flex-direction: column;
+  }
+
+  /* Adventure Page */
+
+  .ad-cards {
+      display: flex;
+  }
+
+  .card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    color: #fff;
+    letter-spacing: 2px;
+    background: rgba(0, 0, 0, 0.2);
+    margin: 2%;
+    padding: 2%;
+    border: 1px solid black;
+  }
+
+  .card img {
+      position: absolute;
+      top: 900px;
+      width: 400px;
+      object-fit: cover;
+      z-index: -1;
+  }
+
+  .card p {
+      font-size: 1.2rem;
+      letter-spacing: normal;
+  }
+
+  .card button {
+    background-color: #c16ecf;
+    color: #fff;
+    font-size: 1.3rem;
+    width: 40%;
+    height: 50px;
+    border: 1px solid black;
+    margin-top: 30px;
+
+    align-self: center;
+  }
+
+  /* schedule page */
+
+  .table-headers {
+      display: flex;
+      align-content: flex-end;
+
+      width: 100%;
+      margin: 3%;
+  }
+
+  .header {
+    display: flex;
+    align-items: flex-end;
+    padding: 3%;
+    width: 25%;
+    color: #fff;
+    letter-spacing: 2px;
+    font-size: 1.6rem;
+  }
+
+  .table {
+      display: flex;
+      justify-content: space-around;
+
+      border: 1px solid black;
+      background: rgba(0,0,0,0.2);
+  }
+
+  .table:nth-child(3) {
+      border-top: none;
+      border-bottom: none;
+  }
+
+  .table-item {
+      padding: 3%;
+      color: #fff;
+      letter-spacing: 2px;
+      font-size: 1.3rem;
+      width: 25%;
+  }
+
+  .form-wrapper {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin-top: 100px;
+  }
+
+  .form-wrapper h2 {
+      color: #fff;
+      letter-spacing: 2px;
+  }
+
+  form {
+      margin-top: 30px;
+  }
+
+
+  form label {
+      color: #fff;
+      letter-spacing: 2px;
+      font-size: 1.2rem;
+  }
+
+  form input {
+    display: block;
+    font-size: 1rem;
+    width: 600px;
+    border: solid 1px black;
+    padding: 0.75rem;
+    margin: 2%;
+    background-color: #fff;
+  }
+
+  .select-css {
+      margin-top: 10px;
+      margin-bottom: 20px;
+  }
+
+  .btn-wrapper {
+      display: flex;
+      justify-content: center;
+  }
+
+  .submitBtn {
+    background-color: #c16ecf;
+    color: #fff;
+    font-size: 1.3rem;
+    width: 40%;
+    height: 50px;
+    border: 1px solid black;
+    margin-top: 30px;
+  }
+
+
+  /* Footer */
+
+  footer {
+    background: rgba(0, 0, 0, 0.2);
+    height: 75px;
+    border: 1px solid black;
+    margin-top: 4%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  footer div {
+      color: #fff;
+      font-size: 1.3rem;
+  }
+
+  .social-footer {
+      display: flex;
+      margin-left: 5%;
+  }
+
+  .social-footer a {
+      background: none;
+      font-size: 1.7rem;
+      padding: 10%;
+  }

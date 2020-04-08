@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/large.css">
+    <link rel="stylesheet" href="css/medium.css">
+    <link rel="stylesheet" href="css/small.css">
+    <link href="https://fonts.googleapis.com/css2?family=Muli:ital,wght@0,400;0,700;1,700&display=swap"
+        rel="stylesheet">
+    <title>Salmon River Adventures</title>
+</head>
+
+<body>
+    <header class="wrapper">
+
+        <nav class="flex-nav">
+            <button class='hide' onclick="toggleMenu()">&#9776; Menu</button>
+            <ul id="navbar" class='hide'>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Adventures</a></li>
+                <li><a href="#">Guides</a></li>
+                <li><a href="#">Book a Trip</a></li>
+                <li><a href="#">Contact</a></li>
+                <li class="social">
+                    <a href="http://twitter.com/dallineliason"><i class="fa fa-twitter"></i></a>
+                </li>
+                <li class="social">
+                    <a href="http://facebook.com/dallineliason"><i class="fa fa-facebook"></i></a>
+                </li>
+                <li class="social">
+                    <a href="http://instagram.com/dallineli"><i class="fa fa-instagram"></i></a>
+                </li>
+            </ul>
+        </nav>
+        <section>
+            <img class='raft-logo' src="images/raft-logo.png">
+            <h1><em>Salmon River Adventures!</em></h1>
+        </section>
+
+    </header>
+    <main>
+        <section class="banner" onmouseover="toggleImageDarkness()" onmouseout="toggleImageDarkness()">
+            <img src="images/river-banner.jpg">
+            <div class="banner-txt-wrapper hide">
+                <p class="banner-p">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+                    et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+                    aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+                    cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
+                    culpa qui officia deserunt mollit anim id est laborum.
+                </p>
+                <button>Book a trip!</button>
+            </div>
+        </section>
+        <section class="weather">
+            <div class='weather-container'>
+                <div class='weather-wrapper'>
+                    <div class='weather-icon-header'>
+                        <h2>Weather</h2>
+                        <div class='weather-icon'>
+                            <img src="https://via.placeholder.com/150" alt="weather-icon">
+                        </div>
+                    </div>
+                    <div class='weather-conditions'>
+                        <div>Current Temp: <span id='currently'>41</span>&deg;</div>
+                        <div>High: <span id='high'></span>&deg;</div>
+                        <div>Humidity: <span id='humidity'></span></div>
+                        <div>Wind Speed: <span id='wind-speed'></span>MPH</div>
+                    </div>
+                </div>
+            </div>
+            <img class='img-main' src='images/river-raft.jpg' alt='image-main'>
+        </section>
+
+    </main>
+    <footer>
+        <div>
+            &copy; 2020 Salmon River Adventures | Dallin Eliason
+        </div>
+        <div class='social-footer'>
+            <a href='#'><i class="fa fa-twitter"></i></a>
+            <a href='#'><i class="fa fa-facebook"></i></a>
+            <a href='#'><i class="fa fa-instagram"></i></a>
+        </div>
+    </footer>
+</body>
+<script src="js/scripts.js"></script>
+<script src="js/weather.js"></script>
+
+</html>

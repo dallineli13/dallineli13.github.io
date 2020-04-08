@@ -1,0 +1,32 @@
+@media all and (max-width:1000px) {
+    .flex-nav ul {
+        flex-wrap: wrap;
+    }
+
+    .flex-nav li {
+        flex: 1 1 50%;
+    }
+
+    .flex-nav li:nth-child(5) {
+        flex-basis: 100%;
+    }
+
+    .flex-nav .social {
+        flex: 1 1 25%;
+    }
+
+    .ad-cards {
+        flex-wrap: wrap;
+    }
+
+    .table-wrapper {
+        width: 80%;
+        margin: 0 auto;
+    }
+
+    .table-item {
+        font-size: 1rem;
+        width: unset;
+    }
+  }
+  
