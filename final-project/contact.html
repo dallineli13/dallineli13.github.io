@@ -36,55 +36,27 @@
             </nav>
             <section>
                 <img class='raft-logo' src="images/raft-logo.png">
-                <h1><em>Book a Trip!</em></h1>
+                <h1><em>Contact Us</em></h1>
             </section>
         </header>
         <main>
-            <section class='table-wrapper'>
-                <div class='table-headers'>
-                    <div class='header'>Activity</div>
-                    <div class='header'>Time</div>
-                    <div class='header'>Skill Level</div>
-                    <div class='header'>Price</div>
-                </div>
-                <div class='table'>
-                    <div class='table-item'>River Rafting</div>
-                    <div class='table-item'>6 Hours</div>
-                    <div class='table-item'>Intermediate</div>
-                    <div class='table-item'>$139.95/Person</div>
-                </div>
-                <div class='table'>
-                    <div class='table-item'>Camping</div>
-                    <div class='table-item'>12-24 Hours</div>
-                    <div class='table-item'>Beginner</div>
-                    <div class='table-item'>$39.95/Person</div>
-                </div>
-                <div class='table'>
-                    <div class='table-item'>Fishing</div>
-                    <div class='table-item'>3-6 Hours</div>
-                    <div class='table-item'>Intermediate</div>
-                    <div class='table-item'>$39.95/Person</div>
+            <section class='contact'>
+                <div class='contact-wrapper'>
+                    <div>Address: 1000 S Main St Riggins, ID</div>
+                    <div>Phone: 208-098-0989</div>
+                    <div>Email: help@salmon.com</div>
                 </div>
             </section>
             <section>
                 <div class='form-wrapper'>
-                    <h2>Are you ready?</h2>
+                    <h2>Have a question?</h2>
                     <form action="index.html">
-                        <label>First Name <input type="text" name="fname" required></label>
                         <label>Last Name <input type="text" name="lname" required></label>
                         <label>Email <input type="email" name="email" placeholder="example@email.com"></label>
-                        <label>Phone <input type="tel" name="phone" required></label>
-                        <label>Adventure<br>
-                                <select class="select-css">
-                                    <option id="select" value="">Select Adventure</option>
-                                    <option value="rafting">Rafting</option>
-                                    <option value="camping">Camping</option>
-                                    <option value="fishing">Fishing</option>
-                                </select>
-                        </label><br>
-                        <label>Date of Booking <input type="date" name="date" required></label>
+                        <label>Booking Number <input type="text" name="num" required></label>
+                        <label>Question <textarea></textarea></label>
                         <div class='btn-wrapper'>
-                            <input class="submitBtn" type="submit" value="Book my trip!">
+                            <input class="submitBtn" type="submit" value="Get help!">
                         </div>
                     </form>
                 </div>
@@ -101,5 +73,6 @@
             </div>
         </footer>
     </body>
+    <script src="js/guides.js"></script>
     <script src="js/scripts.js"></script>
 </html>
